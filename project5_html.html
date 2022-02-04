@@ -1,0 +1,253 @@
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+            body{
+                background-size: cover;
+                display: flex;
+                flex-direction: column;
+                margin:0px;
+            }
+            #navbar{
+                left: 0px;
+                top: 0px;
+               position: fixed;
+               display: flex;
+               justify-content: end;
+               flex-direction: row;
+               background-color: rgb(172, 32, 32);
+               height: 60px;
+               width: 100%;
+               z-index: 3;
+            }
+            #nav-link{
+                justify-self: end;
+                align-self: center;
+                padding:5%;
+                width: auto;
+                text-decoration: none;
+                color: white;
+                font-size: 2vw;
+            }
+            #welcome-section{
+                background-color: violet;
+                height: 100vh;
+                width: 100%;
+                text-align: center;
+            }
+            #welcome-section>div{
+                margin-top: 45vh;
+            }
+            #welcome-section>div>h1{
+                font-family:  sans-serif;
+                font-size: 6vw;
+            }
+            #welcome-section>div>p{
+                margin-top: 0px;
+                font-size: 4vw;
+            }
+            #projects{
+                background-color: rgb(83, 129, 182);
+                text-align: center;
+                width: 100%;
+                left: 0%;
+            }
+            #projects>div{
+                display: flex;
+                justify-content: center;
+                gap:50px;
+                flex-wrap: wrap;
+                margin-bottom: 4%;
+            }
+            #projects>h2{
+                font-size: 40px;
+                padding-top: 80px;
+                padding-bottom: 40px;
+                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            }
+            #projects>div>div>p{
+                font-size: 25px;
+                color: white;
+                padding-top:20px;
+                margin:auto;
+            }
+            #projects>div>div:hover{
+                transform: scale(1.1);
+                cursor: pointer;
+            }
+            #projects>div>div{
+                width: 40%;
+                max-width: 370px;
+                height: 40vw;
+                max-height: 450px;
+              min-height:300px;
+              min-width:250px;
+                margin: auto;
+                color:rgb(166, 232, 235);
+                box-shadow: 3px 2px 20px 2px rgb(94, 43, 43);
+                background-color: rgb(160, 83, 68);
+            }
+            img{
+                width: 100%;
+                height: 80%;
+            }
+            #contact{
+                
+                font-size: 2vw;
+                display: flex;
+                flex-direction: column;
+                top: 0%;
+                width: 100%;
+                height: 100vh;
+                justify-content: center;
+                background-color: rgb(57, 57, 83);
+            }
+            #contact>div{
+              margin:auto;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                height: 85%;
+            }
+            h3{
+                font-size: 50px;
+                color: white;
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            }
+            #contact>div>nav{
+                display: flex;
+                flex-wrap: wrap;
+                gap: 20px;
+                justify-content: center;
+            }
+            #con-link{
+                text-decoration: none;
+                padding:30px;
+                padding-bottom: 20px;
+                margin-bottom: 6px;
+                font-size: 30px;
+                font-family: "Font Awesome 5 Brands",Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+                color: rgb(241, 241, 245);
+                z-index: 2;
+            }
+            #con-link:hover{
+                color: rgb(255, 253, 110);
+                font-weight: bold;
+                transform: scale(1.5);
+                text-shadow: 2px 2px 1px #1f1f1f;
+                transition: transform 0.3s ease-out;
+            }
+            a:hover{
+                transform: scale(1.3);
+            }
+            footer{
+                color: white;
+                padding:15px;
+                display: flex;
+                align-items: center;
+                gap: 6vw;
+                text-align: center;
+                justify-content:space-evenly;
+                height: 15%;
+                margin:auto;
+            }
+            hr{
+                height: 3px;
+                width: 99.7%;
+                background-color: rgb(172, 32, 32);
+            }
+            #profile-link{
+                text-decoration: none;
+                color: rgb(230, 133, 7);
+            }
+            @media(max-width:600px){
+                #projects>div>div>p{
+                    font-size: 15px;
+                    margin:auto;
+                }
+                h3{
+                    font-size: 30px;
+                }
+                #con-link{
+                    font-size: 20px;
+                }
+            }
+            @media(max-width:750px){
+                #projects>div>div>p{
+                    font-size: 20px;
+                    margin:auto;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <nav id="navbar">
+            
+                <a href="#welcome-section" id="nav-link">About</a>
+                <a href="#projects" id="nav-link">Work</a>
+                <a href="#contact" id="nav-link">Contact</a>
+            
+        </nav>
+        <section id="welcome-section">
+            <div>
+                <h1>Hey Myself Priyans</h1>
+                <p><i>a web developer</i></p>
+
+            </div>
+        </section>
+        <section id="projects">
+            <h2 class="project-tile"><u>These are some of my projects</u></h2>
+            <div>
+                <div onclick="location.href='https://codepen.io/vekariyapriyans/pen/WNZWodd';">
+                    <img src="https://cdn.freecodecamp.org/testable-projects-fcc/images/tribute.jpg">
+                    <p id="project-title">
+                        " Tribute Page "
+                    </p>
+                </div>
+                <div onclick="location.href='https://codepen.io/vekariyapriyans/pen/WNZBbjN';">
+                    <img src="https://th.bing.com/th/id/OIP.tJ0VfTbG4-fm0UYkC5_nWgHaHa?w=212&h=213&c=7&r=0&o=5&dpr=1.25&pid=1.7">
+                    <p id="project-title">
+                        " Survey Form "
+                    </p>
+                </div>
+                <div onclick="location.href='https://codepen.io/vekariyapriyans/pen/jOGooeG';">
+                    <img src="https://thumbs.dreamstime.com/b/landing-page-icon-modern-flat-line-vector-illustration-design-concept-mobile-web-graphics-flat-line-symbol-logo-creative-82396938.jpg">
+                    <p id="project-title">
+                        " Product Landing Page "
+                    </p>
+                </div>
+                <div onclick="location.href='https://codepen.io/vekariyapriyans/pen/rNGXOQg';">
+                    <img src="https://th.bing.com/th/id/OIP.LYI2WtL-jLRkSVjgmlaY4wAAAA?w=235&h=127&c=7&r=0&o=5&dpr=1.25&pid=1.7">
+                    <p id="project-title">
+                        " JS Documentation Page "
+                    </p>
+                </div>
+            </div>
+        </section>
+        
+        <section id="contact">
+            <div>
+                <h3>Let's work together...</h3>
+                <nav>
+                    <a href="https://www.facebook.com/vekariya.priyans.5" id="con-link">Facebook</a>
+                    <a href="mailto:vekariyapriyans@gmail.com" id="con-link">Send a mail</a>
+                    <a href="https://www.instagram.com/vekariya_priyans" id="con-link">Instagram</a>
+                    <a href="https://www.linkedin.com/in/vekariya-priyans-266532219" id="con-link">LinkedIn</a>
+                </nav>
+            </div>
+            <hr>
+            <footer>
+                <p>Created by Priyans by Reference of freeCodeChamp</p>
+                <div>
+                    <p>&copy Created for</p>
+                    <a id="profile-link" href="https://www.freecodecamp.com/" target="_blank">freeCodeCamp</a>
+                </div>
+            </footer>
+        </section>
+    </body>
+</html>
